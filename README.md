@@ -1,1 +1,2 @@
 - 👋 Hi, I’m @RiddhiHinge20
+MOTIONCUT INTERNSHIP PROJECT
