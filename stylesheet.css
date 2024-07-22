@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('trees.png'),url('bg.jpg');
+    background-size: cover,contain;
+    background-position: center,center;    
+    pointer-events: none;
+}
+
+.wrapper{
+    position:absolute;
+    width: 550px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(15px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: rgb(99, 10, 10);
+    border-radius:25px ;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    margin-top: 45px;
+    font-size:36px ;
+    text-align: center;
+}
+.wrapper.inputbox{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.inputbox input{
+    width: 70%;
+    height: 100%;
+    background: white;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(99, 10, 10);
+    padding: 20px 45px 20px 20px;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-top: 25px;
+   
+}
+.inputbox input::placeholder{
+    color: rgb(99, 10, 10);
+    
+}
+.loginbutton{
+    width: 83%;
+    height: 100%;
+    background:  rgb(99, 10, 10);
+    color: white;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-top: 25px;
+
+}
+.forgetsignup{
+    padding: 10px 53px 50px 55px;
+    display: flex;
+    justify-content: space-between ;
+    font-size: 15px;
+    margin: 20px 0 15px;
+
+}
+.forgetsignup a{
+    color:  rgb(99, 10, 10);
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.leaf {
+    position:absolute;
+    top: -50px; /* Start slightly above the viewport */
+    width: 60px; /* Adjust as needed */
+    animation:zigzag 15s infinite;
+}
+#leaf2{
+    position:absolute;
+    right:50px; /* Start slightly above the viewport */
+    width: 80px; /* Adjust as needed */
+    animation:zigzag 10s infinite;
+}
+#leaf3{
+    position:absolute;
+    right: 400px; /* Start slightly above the viewport */
+    width: 100px; /* Adjust as needed */
+    animation:zigzag 9s infinite;
+}
+#leaf4{
+    position: relative;
+    left:400px; /* Start slightly above the viewport */
+    width: 100px; /* Adjust as needed */
+    animation:zigzag 12s infinite;
+}
+
+#Leaf11{
+    position:absolute;
+    right:50px;
+    right: 70px; /* Start slightly above the viewport */
+    width: 40px; /* Adjust as needed */
+    animation:zigzag 15s infinite;
+    will-change: transform;
+}
+#Leaf12{
+    position:relative;
+    right: 90px; /* Start slightly above the viewport */
+    width: 70px; /* Adjust as needed */
+    animation:zigzag 10s infinite;
+}
+
+@keyframes zigzag {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    10% {
+        transform: translate(20px, 150px) rotate(20deg);
+    }
+    20% {
+        transform: translate(-20px, 300px) rotate(100deg);
+    }
+    30% {
+        transform: translate(20px, 450px) rotate(20deg);
+    }
+    40% {
+        transform: translate(-20px, 600px) rotate(100deg);
+    }
+    50% {
+        transform: translate(20px, 750px) rotate(20deg);
+    }
+    60% {
+        transform: translate(-20px, 900px) rotate(100deg);
+    }
+    70% {
+        transform: translate(20px, 1000px) rotate(20deg);
+    }
+    80% {
+        transform: translate(-20px, 1200px) rotate(100deg);
+    }
+    90% {
+        transform: translate(20px, 1350px) rotate(20deg);
+    }
+    100% {
+        transform: translate(0, 850px) rotate(0deg);
+    }
+}
+
+.moving-image {
+    position: absolute;
+    bottom: 200px;
+    width: 400px;
+    height: 400px; 
+    background: url('girl.png') no-repeat center center;
+    background-size: contain;
+    z-index:-1; 
+    animation: move 10s linear infinite;
+    overflow: visible;
+}
+
+@keyframes move {
+    0% {
+        right: -400px;
+        transform: scaleX(1); 
+    }
+    50% {
+        right: calc(100vw - 400px); 
+        transform: scaleX(1);
+    }
+    50.1% {
+        right: calc(100vw - 400px); 
+        transform: scaleX(-1);
+    }
+    100% {
+        right: -400px; 
+        transform: scaleX(-1);
+    }
+}
+
