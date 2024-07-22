@@ -91,41 +91,41 @@ body{
 
 .leaf {
     position:absolute;
-    top: -50px; /* Start slightly above the viewport */
-    width: 60px; /* Adjust as needed */
+    top: -50px; 
+    width: 60px; 
     animation:zigzag 15s infinite;
 }
 #leaf2{
     position:absolute;
-    right:50px; /* Start slightly above the viewport */
-    width: 80px; /* Adjust as needed */
+    right:50px;
+    width: 80px; 
     animation:zigzag 10s infinite;
 }
 #leaf3{
     position:absolute;
-    right: 400px; /* Start slightly above the viewport */
-    width: 100px; /* Adjust as needed */
+    right: 400px; 
+    width: 100px; 
     animation:zigzag 9s infinite;
 }
 #leaf4{
     position: relative;
-    left:400px; /* Start slightly above the viewport */
-    width: 100px; /* Adjust as needed */
+    left:400px; 
+    width: 100px; 
     animation:zigzag 12s infinite;
 }
 
 #Leaf11{
     position:absolute;
     right:50px;
-    right: 70px; /* Start slightly above the viewport */
-    width: 40px; /* Adjust as needed */
+    right: 70px; 
+    width: 40px; 
     animation:zigzag 15s infinite;
     will-change: transform;
 }
 #Leaf12{
     position:relative;
-    right: 90px; /* Start slightly above the viewport */
-    width: 70px; /* Adjust as needed */
+    right: 90px; 
+    width: 70px; 
     animation:zigzag 10s infinite;
 }
 
